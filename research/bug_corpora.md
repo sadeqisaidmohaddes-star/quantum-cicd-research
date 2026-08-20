@@ -8,8 +8,8 @@ Search covered 6+ distinct queries plus follow-on primary-source fetches (see `r
 
 ### 1. Bugs4Q — the most established corpus found
 - **Primary source:** arXiv:2108.09744 (Zhao et al., presented ASE 2021 New Ideas track); journal version in *Journal of Systems and Software*, vol. 205 (2023), DOI 10.1016/j.jss.2023.111805.
-- **Content:** 36 manually-validated real Qiskit bugs (spanning Terra/Aer/Ignis/Aqua modules), each with buggy code, fixed code, and reproducing tests. Later extended to ~50–67 entries under the name "Bugs4Q-NA."
-- **Repository:** github.com/Z-928/Bugs4Q (public).
+- **Content:** the arXiv preprint (2108.09744, 2021) describes 36 manually-validated real Qiskit bugs (spanning Terra/Aer/Ignis/Aqua modules), each with buggy code, fixed code, and reproducing tests. **Correction from verification pass 2 (2026-08-20):** the published JSS 2023 version (independently confirmed via ACM DL listing, not just the repo's citation block) describes the benchmark as **42 real, manually-validated Qiskit bugs mined from GitHub, StackOverflow, and Stack Exchange** — the count grew between the 2021 preprint and the 2023 journal version. The earlier "~50–67 entries under Bugs4Q-NA" figure could not be re-confirmed in this pass and should be treated as UNVERIFIED until opened directly; cite 36 (preprint) or 42 (JSS 2023, the more authoritative published count) instead.
+- **Repository:** github.com/Z-928/Bugs4Q (public); an alternate repo name `Bugs4Q-Framework` also appears in secondary listings — not independently distinguished from the primary repo in this pass.
 - **Standing:** a 2026 replication study (see #2 below) describes it as "a widely used dataset of real-world bugs in quantum programs."
 
 ### 2. Cross-version regression study built directly on Bugs4Q — highly material

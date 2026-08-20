@@ -36,6 +36,13 @@ All URLs below were opened directly (WebFetch / gh CLI / Zenodo DOI resolution) 
 - https://arxiv.org/abs/2512.24656 — 32,296-bug-report mined dataset (Yousuf & Sofi)
 - https://arxiv.org/abs/2606.07314 — QBugLM
 
+## Verification pass 2 additions (2026-08-20)
+- https://doi.org/10.1016/j.simpa.2020.100051 — attempted direct DOI resolution for the QCEC citation; redirected to ScienceDirect, blocked by a JS-rendered wall
+- https://doi.org/10.1016/j.jss.2023.111805 — attempted direct DOI resolution for the Bugs4Q citation; same block
+- https://dl.acm.org/doi/10.1016/j.jss.2023.111805 — ACM DL listing, successfully surfaced via web search; provided the corrected bug count (42) for the JSS 2023 published version of Bugs4Q
+- https://www.semanticscholar.org/paper/QCEC:-A-JKQ-tool-for-quantum-circuit-equivalence-Burgholzer-Wille/1079c0b1fc1f77e429f4e8277b63856837c1a997 — independent bibliographic cross-confirmation of the QCEC citation
+- https://researchr.org/publication/BurgholzerW21 — second independent bibliographic cross-confirmation of the QCEC citation
+
 ## Other primary sources
 - https://doi.org/10.5281/zenodo.21020113 — Zenodo software record for "cart" (independently resolved, not just repo self-description)
 - Journal: Burgholzer & Wille, "QCEC: A JKQ tool for quantum circuit equivalence checking," *Software Impacts*, 2021, DOI 10.1016/j.simpa.2020.100051 (verified via repo citation block only, not independently opened via DOI resolver — flagged PARTIALLY CONFIRMED in papers.md)

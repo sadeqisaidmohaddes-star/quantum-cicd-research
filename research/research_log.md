@@ -59,6 +59,19 @@ Queries included (6+ distinct, varied phrasing): "Q-Trace quantum debugging tool
 | `WebFetch https://doi.org/10.5281/zenodo.21020113` | Independently confirmed real Zenodo software record, authors, institution, date |
 | `gh search repos topic:quantum-computing "ci"` | Returned established SDKs/libraries (e.g. Cirq), none matching a CI-testing-product description |
 
+## Verification pass 2 (2026-08-20) — closing open DOI-resolution items
+
+| Query/tool | Result summary |
+|---|---|
+| `WebFetch https://doi.org/10.1016/j.simpa.2020.100051` | 302 redirect to linkinghub.elsevier.com; followed, but ScienceDirect page returned only a client-side "Redirecting" shell — no full text obtainable via WebFetch |
+| `WebFetch https://linkinghub.elsevier.com/retrieve/pii/S2665963820300427` | Confirmed blocked (JS-rendered page, no static content) |
+| `WebSearch "QCEC: A JKQ tool for quantum circuit equivalence checking" Software Impacts Burgholzer Wille` | Cross-confirmed title/authors/venue/year via Semantic Scholar, researchr, and ScienceDirect's own indexed listing (title match, not full text) |
+| `WebFetch https://doi.org/10.1016/j.jss.2023.111805` | 302 redirect to linkinghub.elsevier.com; same JS-wall issue |
+| `WebFetch https://linkinghub.elsevier.com/retrieve/pii/S0164121223002005` | Confirmed blocked, same as above |
+| `WebSearch Bugs4Q Journal of Systems and Software 2023 quantum bug dataset Qiskit` | Found ACM DL's listing for the JSS 2023 published version — exact title, venue, volume, and a clear abstract summary stating **42 real bugs** mined from GitHub/StackOverflow/Stack Exchange, correcting the previously-carried "~50-67" figure |
+
+Outcome: see `raw_notes.md` "Verification pass 2" section for the full writeup and which files were corrected.
+
 ---
 
-*All four research threads complete as of 2026-08-20. See claims.md for the consolidated claims table and gap_analysis.md for synthesis.*
+*All four research threads complete as of 2026-08-20; verification pass 2 closed two open DOI-resolution items the same day. See claims.md for the consolidated claims table and gap_analysis.md for synthesis.*
