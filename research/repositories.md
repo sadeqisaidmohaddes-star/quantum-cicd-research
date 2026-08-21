@@ -48,6 +48,19 @@ Verified via README **and** independent Zenodo DOI resolution (not just the repo
 
 ---
 
+## C14 — Benchpress: PARTIALLY CONFIRMED — pytest-native + cross-SDK exists, as a benchmark, not a detector (added 2026-08-21)
+
+**[Qiskit/benchpress](https://github.com/Qiskit/benchpress)** — IBM's open-source quantum-SDK benchmarking suite, found in a follow-up sweep on 2026-08-21 (after the original 2026-08-16/20 phase) and verified by opening the repository and its paper directly, per the standing methodology.
+
+- **What it is:** a pytest-based suite of 1,000+ benchmarks run across **8 SDKs** (Qiskit, Braket, Cirq, Tket, BQSKit, Staq, pyqpanda3, and the Qiskit IBM transpiler service) on circuits up to 930 qubits / ~1M two-qubit gates. Paper: "Benchmarking the performance of quantum computing software," arXiv:2409.08844, published as Nation et al., *Nature Computational Science* 5, 427–435 (2025).
+- **What it proves for the gap analysis:** the pytest-native, cross-SDK orchestration pattern — two of the four pieces of the C13 narrowed gap — already works at scale, with an abstract "workout" pattern where each SDK opts in per test (unimplemented = SKIPPED).
+- **What it does not do:** every test yields capability/performance results (pass/skip/fail/xfail + pytest-benchmark timings). **No circuit equivalence checking, no cross-version regression detection, no reusable GitHub Actions packaging.**
+- Maturity: Apache-2.0, ~155 stars, 323 commits — by far the most mature cross-SDK pytest harness found in this entire investigation.
+
+**Impact on prior claims:** C10's "no cross-SDK tool of any kind was found" is corrected to "no cross-SDK *regression/equivalence* tool was found." The C13 narrowed gap statement itself stands: no system combines pytest-native + cross-SDK + automated regression/equivalence detection + GitHub Actions packaging. Benchpress is the strongest evidence yet that the first two pieces are practical — and a candidate architectural reference for any future implementation.
+
+---
+
 ## C11 — Other equivalence/regression tools beyond MQT QCEC: NOT FOUND (beyond items above)
 
 No other academic or industry (IBM/Google/Xanadu/Quantinuum) open-source equivalence checker with CI integration was found via repository search. "Quantum equivalence checking" repo search returned only unrelated SAT-solver student projects (e.g. `n26124939/Quentangle-SAT`, 0 stars — content not verified as legitimate/functional, flagged UNKNOWN not CONFIRMED).

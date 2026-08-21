@@ -75,3 +75,17 @@ Outcome: see `raw_notes.md` "Verification pass 2" section for the full writeup a
 ---
 
 *All four research threads complete as of 2026-08-20; verification pass 2 closed two open DOI-resolution items the same day. See claims.md for the consolidated claims table and gap_analysis.md for synthesis.*
+
+---
+
+## Follow-up sweep — 2026-08-21 (post-phase addition)
+
+| Query / fetch | Result |
+|---|---|
+| `WebSearch cross-SDK quantum circuit equivalence regression testing pytest plugin 2026 Qiskit Cirq Braket tool` | Surfaced **Benchpress** (Qiskit/benchpress), an IBM pytest-based cross-SDK benchmark suite absent from the original sweep |
+| `WebFetch https://github.com/Qiskit/benchpress` | Opened directly: pytest-based, 8 SDKs, capability/performance benchmarking only, Apache-2.0, ~155 stars, 323 commits, no GitHub Actions packaging |
+| `WebFetch https://arxiv.org/abs/2409.08844` | Confirmed the Benchpress paper: Nation et al., "Benchmarking the performance of quantum computing software," published Nat. Comput. Sci. 5, 427–435 (2025); 1,000+ tests, up to 930 qubits / ~1M two-qubit gates |
+| `WebFetch https://arxiv.org/html/2605.19736` | Re-opened QUTest full text: confirms Qiskit-only support, no cross-SDK equivalence, names Cirq/PennyLane support as future work — the C13 cross-SDK gap remains open |
+
+Outcome: new claim **C14** added; C10/C13 prose refined ("no cross-SDK tool of any kind" → "no cross-SDK regression/equivalence tool"). See claims.md and repositories.md.
+

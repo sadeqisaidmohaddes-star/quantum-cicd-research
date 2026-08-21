@@ -58,3 +58,10 @@ All URLs below were opened directly (WebFetch / gh CLI / Zenodo DOI resolution) 
 - arXiv:2601.08367, 2503.05240, 2506.02090, 2409.08844, 2509.04763 (NovaQ), 2601.13996, 2503.17322 (QITE), 2602.05759 (PQC migration CI/CD) — surfaced by search, not opened/verified in this research phase
 - A companion "4,984-issue / 36-repo Qiskit-ecosystem benchmark" mentioned alongside arXiv:2512.24656 in search snippets — not independently opened
 - `n26124939/Quentangle-SAT` — GitHub repo surfaced under "quantum equivalence checking" search, legitimacy/functionality not verified
+
+## Added 2026-08-21 (follow-up sweep)
+
+- https://github.com/Qiskit/benchpress — Benchpress repository (opened; README + gym layout inspected)
+- https://arxiv.org/abs/2409.08844 — Benchpress paper (opened; abstract + metadata verified; publ. Nat. Comput. Sci. 5, 427–435, 2025, DOI 10.1038/s43588-025-00792-y)
+- https://arxiv.org/html/2605.19736 — QUTest full text (re-opened to verify Qiskit-only scope and future-work statement)
+
