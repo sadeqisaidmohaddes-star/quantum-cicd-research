@@ -28,6 +28,17 @@ A rigorous, primary-source-verified investigation into whether a genuine open re
 
 A published tool (**QUTest**, arXiv:2605.19736, May 2026) already implements cross-Qiskit-version regression testing with GitHub Actions-compatible output — this materially narrows the original novelty claim. The narrowest defensible remaining gap is a **pytest-native, cross-SDK** (not just cross-version), **automated** regression/equivalence-detection framework packaged as reusable GitHub Actions tooling. See `research/gap_analysis.md` Section 13.
 
+## Artifact
+
+The narrowed gap this study identified — pytest-native, **cross-SDK** circuit equivalence/regression
+testing — is now addressed by a companion tool: **[pytest-qequiv](https://github.com/sadeqisaidmohaddes-star/pytest-qequiv)**
+(Qiskit ↔ Cirq ↔ Amazon Braket equivalence assertions for pytest, with endianness normalization).
+
+## Citing
+
+`CITATION.cff` and `.zenodo.json` are included; a GitHub release of this repository is archived via
+Zenodo for a DOI (see releases).
+
 ## Status
 
 Architecture/design work is **blocked pending human review** of this research. See `research/gap_analysis.md` Section 14 for what further evidence would be needed before a publication-quality novelty claim.

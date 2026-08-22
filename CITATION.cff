@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this research record, please cite it."
+title: "Is there a genuine gap in CI/CD regression testing for quantum software? A primary-source-verified prior-art study"
+type: dataset
+authors:
+  - family-names: "Sadeqi"
+    given-names: "Said Mohaddes"
+repository-code: "https://github.com/sadeqisaidmohaddes-star/quantum-cicd-research"
+url: "https://quantum.sadeqi.me/research"
+abstract: >
+  A prior-art investigation into whether an open-source, pytest-native, cross-SDK
+  regression/equivalence-testing infrastructure for quantum software exists. Fourteen
+  claims are checked against primary sources (official repositories, arXiv, DOI records),
+  twenty-two prior-art systems are inspected, and the original hypothesis is narrowed:
+  cross-version regression testing already exists (QUTest), pytest-native cross-SDK
+  harnesses exist for benchmarking (Benchpress), and the surviving gap is pytest-native
+  cross-SDK equivalence/regression detection — addressed by the companion tool pytest-qequiv.
+keywords:
+  - quantum software engineering
+  - regression testing
+  - continuous integration
+  - equivalence checking
+  - prior art
+license: MIT
+date-released: 2026-08-21
+version: 1.0.0

@@ -1,0 +1,13 @@
+{
+  "title": "Is there a genuine gap in CI/CD regression testing for quantum software? A primary-source-verified prior-art study",
+  "upload_type": "dataset",
+  "description": "A prior-art investigation into whether an open-source, pytest-native, cross-SDK regression/equivalence-testing infrastructure for quantum software exists. Fourteen claims are checked against primary sources, twenty-two prior-art systems are inspected, and the original hypothesis is narrowed in public. Companion tool: pytest-qequiv. Rendered at https://quantum.sadeqi.me/research",
+  "creators": [{ "name": "Sadeqi, Said Mohaddes" }],
+  "keywords": ["quantum software engineering", "regression testing", "continuous integration", "equivalence checking", "prior art"],
+  "license": "MIT",
+  "access_right": "open",
+  "related_identifiers": [
+    { "identifier": "https://quantum.sadeqi.me/research", "relation": "isSupplementTo", "scheme": "url" },
+    { "identifier": "https://github.com/sadeqisaidmohaddes-star/pytest-qequiv", "relation": "isSourceOf", "scheme": "url" }
+  ]
+}
